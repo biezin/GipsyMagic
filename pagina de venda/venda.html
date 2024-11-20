@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gypsy Magic - Loja Mística</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Gypsy Magic</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="file:///C:/Users/winin/OneDrive/%C3%81rea%20de%20Trabalho/site%20da%20manda/index.html">Início</a></li>
+                <li><a href="produtos.html" class="active">Produtos</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icons">
+            <button id="menu-button">☰ Menu</button>
+            <button id="cart-button">🛒 Carrinho</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Produto em Destaque -->
+        <section class="produto-destaque">
+            <div class="imagem-produto">
+                <img src="images/vela-natural.jpg" alt="Vela natural aromática">
+            </div>
+            <div class="detalhes-produto">
+                <h1>Vela Natural Aromática</h1>
+                <p>Feita de cera natural, perfeita para purificar energias e trazer serenidade.</p>
+                <ul>
+                    <li><strong>Aroma:</strong> Lavanda</li>
+                    <li><strong>Tempo:</strong> 30 horas</li>
+                    <li><strong>Feita:</strong> Artesanalmente</li>
+                </ul>
+                <div class="preco-comprar">
+                    <span class="preco">R$ 39,90</span>
+                    <button class="btn-adicionar-carrinho">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Produtos Recomendados -->
+        <section class="produtos-recomendados">
+            <h2>Produtos Recomendados</h2>
+            <div class="grid-produtos">
+                <div class="produto">
+                    <img src="images/incenso.jpg" alt="Incenso">
+                    <h3>Incenso Natural</h3>
+                    <span class="preco">R$ 19,90</span>
+                    <button class="btn-adicionar-carrinho">Adicionar</button>
+                </div>
+                <div class="produto">
+                    <img src="images/cristal.jpg" alt="Cristal">
+                    <h3>Cristal Energizante</h3>
+                    <span class="preco">R$ 29,90</span>
+                    <button class="btn-adicionar-carrinho">Adicionar</button>
+                </div>
+                <div class="produto">
+                    <img src="images/banho.jpg" alt="Banho">
+                    <h3>Banho Energético</h3>
+                    <span class="preco">R$ 25,90</span>
+                    <button class="btn-adicionar-carrinho">Adicionar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrinho -->
+        <section id="carrinho-modal" class="carrinho">
+            <h2>Seu Carrinho</h2>
+            <ul id="lista-carrinho"></ul>
+            <p id="carrinho-total">Total: R$ 0,00</p>
+            <button id="fechar-carrinho" class="btn-fechar">Fechar Carrinho</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Gypsy Magic. Magia e natureza para você.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

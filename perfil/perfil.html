@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Criar Perfil - Gypsy Magic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="file:///C:/Users/winin/OneDrive/%C3%81rea%20de%20Trabalho/site%20da%20manda/index.html" class="menu-item">Início</a></li>
+                <li><a href="sobre.html" class="menu-item">Sobre</a></li>
+                <li><a href="contato.html" class="menu-item">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content-section">
+        <h2>Criar Perfil</h2>
+
+        <!-- Formulário de criação de perfil -->
+        <form id="form-criar-perfil">
+            <div class="form-group">
+                <label for="fotoPerfil">Foto de Perfil</label>
+                <input type="file" id="fotoPerfil" accept="image/*" onchange="previewImage()">
+                <div id="preview-container" class="moldura1">
+                    <img id="img-preview" src="" alt="Pré-visualização da foto">
+                    <div id="genero-icon" class="genero-icon"></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="nome">Nome de usuário</label>
+                <input type="text" id="nome" placeholder="Nome de usuário" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dataNascimento">Data de Nascimento</label>
+                <input type="date" id="dataNascimento" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sexo">Sexo</label>
+                <select id="sexo">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="moldura">Escolha a Moldura</label>
+                <select id="moldura" onchange="changeMoldura()">
+                    <option value="moldura1">Moldura 1</option>
+                    <option value="moldura2">Moldura 2</option>
+                    <option value="moldura3">Moldura 3</option>
+                    <option value="moldura4">Moldura 4</option>
+                    <option value="moldura5">Moldura 5</option>
+                </select>
+            </div>
+
+            <button type="submit">Finalizar Criação do Perfil</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gypsy Magic | Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
